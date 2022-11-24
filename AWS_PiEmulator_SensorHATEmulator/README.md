@@ -1,85 +1,43 @@
 
-# Movie Recommendation system
-
-This PageRank Project is to implemente PageRank algorithm with PySpark and Scala.
+# AWS IoT + Raspberry Pi Sense HAT Emulator
 
 **[AWS IoT + Raspberry Pi Sense HAT Emulator](https://docs.google.com/presentation/d/15I4hyDi4X2xOrow2Gl8kn8aa0b2LFHqo7L0r7cWmbB4/edit?usp=sharing)**
 
 
 ## Introduction
 
-Recommender System is an information filtering tool that seeks to predict which product a user will like, and based on that, recommends a few products to the users. 
-
-The two widely used approaches for building a recommender System are:
-
-* content-based filtering (CBF)
-* collaborative filtering (CF)
-
-![My Image](./image/Recommendation_System.png)
+This project is to use Raspberry Pi Sense HAT Emulator to get real-time temperature data and send the data to AWS by connect the Raspberry Pi Device to AWS IoT.
 
 
 ## Design
 
-Recommendation using Alternating Least Squares (ALS)
-The general approach is iterative. During each iteration, one of the factor matrices is held constant, while the other is solved for using least squares. 
+Using python to send data from Raspberry Pi Sense HAT to AWS IoT.
 
-* Modify the provided code and implement on Google Colab 
-* Download the file from Google Colab and test on Google Cloud Platform
+![My Image](./image/design.png)
+
 
 ## Implementation
 
-### Google Colab
-
-**[Detailed steps of execute on Google Colab](https://github.com/SharonCao0920/CloudComputing/blob/main/Machine_Learning/Movie_Recommendation_System/Movie_Recommendation_System.ipynb)**
+![My Image](./image/implementation.png)
 
 ## Test
 
 ### Google Cloud Platform
 
-* Download .py file from Colab
+* Raspberry Pi Server
 
-* Create cluster on GCP and open VM through SSH
+![My Image](./image/result1.png)
 
-* Upload .txt data files and .py source file to GCP
+* AWS IoT MQTT Test Client
 
-![My Image](./image/upload.png)
-
-* Create directory in hdfs file system
-```
-$ hdfs dfs -mkdir hdfs:///data
-```
-   
-* Modify paths in the source code 
-
-```
-$ hdfs dfs -put ./data/mllib/* hdfs:///data/mllib
-```
-![My Image](./image/path.png)
-
-*  Execute .py source code
-
-```
-$ spark-submit xxx.py
-```
-
-or
-
-```
-$ python xxx.py
-```
-
-![My Image](./image/execute.png)
-
-
-## Enhancement
-
-How to make the result more reliable and the training speed faster?
+![My Image](./image/result2.png)
 
 ## Conclusion
 
-The result run in Google Colab is verified in GCP with no problem. However, the training time on both platforms are really long. With this project there are only less than 20,000 data in dataset. Training data will be heavier with heavier datasets. 
+Connection to AWS IoT is successful and data successfully send from sense HAT emulator to AWS!
+ 
 
 
 ## References
 
-Nair, S. (2020, August 10). PySpark Recommender System with ALS. Towards Data Science. Retrieved November 16, 2022, from https://towardsdatascience.com/build-recommendation-system-with-pyspark-using-alternating-least-squares-als-matrix-factorisation-ebe1ad2e7679 
+Publish MQTT messages to AWS IoT Core using Python. (2021, October 21). AWS. Retrieved November 24, 2022, from https://aws.amazon.com/premiumsupport/knowledge-center/iot-core-publish-mqtt-messages-python/ 
