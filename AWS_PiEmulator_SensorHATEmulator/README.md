@@ -3,7 +3,7 @@
 
 This PageRank Project is to implemente PageRank algorithm with PySpark and Scala.
 
-**[Movie Recommendation system Google Slides](https://docs.google.com/presentation/d/1Bm1x5WRxM4nd2nwazsE5S-8ZJUpw5Di39ZobLhlzMB0/edit?usp=sharing)**
+**[AWS IoT + Raspberry Pi Sense HAT Emulator](https://docs.google.com/presentation/d/15I4hyDi4X2xOrow2Gl8kn8aa0b2LFHqo7L0r7cWmbB4/edit?usp=sharing)**
 
 
 ## Introduction
