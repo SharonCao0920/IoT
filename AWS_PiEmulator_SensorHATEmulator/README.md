@@ -22,8 +22,6 @@ Using python to send data from Raspberry Pi Sense HAT to AWS IoT.
 
 ## Test
 
-### Google Cloud Platform
-
 * Raspberry Pi Server
 
 ![My Image](./image/result1.png)
