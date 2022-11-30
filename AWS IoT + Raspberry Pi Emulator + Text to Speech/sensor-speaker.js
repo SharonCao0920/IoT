@@ -4,8 +4,8 @@ const Speaker = require('speaker');
 
 // Create an Polly client
 const Polly = new AWS.Polly({
-	accessKeyId: 'AKIAVUGLAN3DRKVZIVES',
-	secretAccessKey: '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',
+	accessKeyId: 'AKIAVUGLAN3xxxx',
+	secretAccessKey: 'tkM1hqXPdPqaxxxxxx',
 	signatureVersion: 'v4',
 	region: 'us-west-1'
 });
