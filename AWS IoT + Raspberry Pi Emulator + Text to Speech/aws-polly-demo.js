@@ -2,8 +2,8 @@ const AWS = require('aws-sdk')
 const Fs = require('fs')
 
 const Polly = new AWS.Polly({
-	accessKeyId: 'AKIAVUGLAN3DRKVZIVES',
-	secretAccessKey: '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',
+	accessKeyId: 'AKIAVUGLAN3xxxx',
+	secretAccessKey: 'tkM1hqXPdPqapxxxx',
 	signatureVersion: 'v4',
 	region: 'us-east-1'
 });
