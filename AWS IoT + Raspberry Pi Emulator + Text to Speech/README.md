@@ -104,6 +104,7 @@ let params = {
 After making the voice streaming work:
 * Replace the hardcoded text with real-time data 
 * Connect with Raspberry Pi sensor to voice streamed temperature data
+
 More technology may be involved to achieve these goals!
 
 ## Conclusion
@@ -113,5 +114,7 @@ Successful convert text to voice with Amazon Polly in nodejs
 ## References
 Websites:
 https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Polly.html 
+
 https://github.com/TooTallNate/node-speaker 
+
 https://docs.aws.amazon.com/polly/latest/dg/API_SynthesizeSpeech.html 
