@@ -23,7 +23,7 @@ This project is to use Amazon Polly to make the sensor speak on Raspberry Pi Des
 * Create nodeis project with npm
 
 
-`$ npm init -y `
+``$ npm init -y ``
 
 
 * Install package for nodejs in aws
